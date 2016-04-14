@@ -4,7 +4,6 @@
         next();
     },
     logger: function (req, res, next) {
-        //console.log(req.method + " " + req.originalUrl + " at " + new Date().toString());
         console.log("Request: method - " + req.method + " to - " + req.originalUrl + " at" + new Date().toString());
         next();
     }
