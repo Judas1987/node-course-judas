@@ -2,9 +2,7 @@
 var middleware = require("./middleware.js");
 
 var app = express();
-var PORT = 3000;
-
-//app.use(middleware.requireAuthentication);
+var PORT = process.env.PORT || 3000;
 
 app.use(middleware.logger);
 
